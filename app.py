@@ -32,42 +32,39 @@ VALID_DDDS = {
 # 1. LOCAIS
 # =============================================================================
 LOCAL_OPTIONS = [
-    {"id": "1", "nome": "CFIS - CENTRO DE FORMAÇÃO E INCLUSÃO SOCIAL NOSSA SENHORA DE FÁTIMA"},
+    {"id": "1", "nome": "ASSOCIAÇÃO DE AMIGOS E MORADORES DO BAIRRO EDSON QUEIROZ"},
 ]
 
 # =============================================================================
 # 2. CATÁLOGO DE CURSOS
 # =============================================================================
 COURSE_CATALOG = [
-    {"id": "1", "nome": "26/DSBR 03 - DESIGNER DE SOBRANCELHAS"},
-    {"id": "2", "nome": "26/INAT 01 - INTELIGÊNCIA ARTIFICIAL"},
+    {"id": "1", "nome": "26/DSBR 04 - DESIGNER DE SOBRANCELHAS"},
 ]
 
 # =============================================================================
 # 3. HORÁRIOS
 # =============================================================================
 SCHEDULE_OPTIONS = {
-    "1": {"dias_aula": "Segunda a Sexta", "horario": "13h até 18h"},  # DSBR03 - dias atualizado
-    "2": {"dias_aula": "Segunda e Quarta", "horario": "13h até 15h"}, # INAT01 - inalterado
+    "1": {"dias_aula": "Segunda a Sexta", "horario": "18h até 21h"},
 }
 
 # =============================================================================
 # 4-5. DATAS
 # =============================================================================
 START_DATE_OPTIONS = {
-    "1": "17/06/2026",  # inalterado
-    "2": "22/06/2026",  # inalterado
+    "1": "22/06/2026",
 }
+
 END_DATE_OPTIONS = {
-    "1": "23/06/2026",  # DSBR03 - atualizado (era 19/06)
-    "2": "22/07/2026",  # inalterado
+    "1": "26/06/2026",
 }
 
 # =============================================================================
 # 6. ENDEREÇOS
 # =============================================================================
 ADDRESS_OPTIONS = {
-    "1": "📍Rua Antônio Candeia, nº 245, bairro Guajeru - CEP.: 60.843-230",
+    "1": "📍Rua Lucas Francisco Antônio, nº 285, bairro Edson Queiroz - CEP.: 60.812-110",
 }
 
 # =============================================================================
@@ -75,22 +72,21 @@ ADDRESS_OPTIONS = {
 # =============================================================================
 TURMA_OPTIONS = [
     {
-        "id": "1", "curso_id": "1", "local_id": "1",
-        "turma_codigo": "26/DSBR-03",
-        "agenda_id": "1", "periodo_id": "1",
-        "encerramento_id": "1", "endereco_id": "1",
-    },
-    {
-        "id": "2", "curso_id": "2", "local_id": "1",
-        "turma_codigo": "26/INAT-01",
-        "agenda_id": "2", "periodo_id": "2",
-        "encerramento_id": "2", "endereco_id": "1",
+        "id": "1",
+        "curso_id": "1",
+        "local_id": "1",
+        "turma_codigo": "26/DSBR-04",
+        "agenda_id": "1",
+        "periodo_id": "1",
+        "encerramento_id": "1",
+        "endereco_id": "1",
     },
 ]
 
 # =============================================================================
 # 8. FUNÇÕES AUXILIARES
 # =============================================================================
+
 def build_course_options():
     local_by_id  = {opt["id"]: opt for opt in LOCAL_OPTIONS}
     course_by_id = {opt["id"]: opt for opt in COURSE_CATALOG}
